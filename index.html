@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Dato Cervecero Fijo</title>
+
+  <!-- Fuente Germania One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+
   <style>
     html, body {
       margin: 0;
@@ -13,10 +19,9 @@
       height: 100%;
     }
 
-    /* Contenedor de toda la pantalla */
     .pantalla {
-      width: 2114px; /* Ajustado al tamaño real de la pantalla */
-      height: 630px; /* Ajustado al tamaño real de la pantalla */
+      width: 1800px;
+      height: 540px;
       position: absolute;
       left: 0;
       top: 0;
@@ -26,26 +31,23 @@
       transform-origin: top left;
     }
 
-    /* Contenedor del área del texto */
     .contenedor-frase {
       position: absolute;
       top: 278px;
       left: 20px;
       width: 940px;
       height: 100px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
-      background-color: rgba(255, 255, 255, 0); /* transparente */
+      background-color: rgba(255, 255, 255, 0);
     }
 
     #frase {
       font-size: 80px;
       color: black;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
+      font-family: 'Germania One', system-ui;
+      font-weight: 400;
       letter-spacing: 2px;
       text-align: center;
     }
@@ -65,7 +67,9 @@
       "Los meseros cargan hasta 12 jarras de cerveza a la vez.",
       "Solo se sirve cerveza fabricada en Múnich en el festival.",
       "El primer barril de cerveza lo abre el alcalde de Múnich.",
-      "La jarra oficial de un litro se llama "Maßkrug"",
+      "La jarra oficial de un litro se llama 'Maßkrug'.", 
+      "Durante el Oktoberfest se comen más de 500 mil pollos asados y 200 mil salchichas.",
+      "En Múnich, todo empieza con “O’zapft is!”: ¡la cerveza ya está servida!"
     ];
 
     let index = 0;
@@ -91,4 +95,5 @@
   </script>
 </body>
 </html>
+
 
