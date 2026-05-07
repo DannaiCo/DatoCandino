@@ -90,7 +90,7 @@ const frases = [
 "Cuando tengas hijos, te vas a acordar de mí."
 ];
 
-let index = 0;
+let index = Math.floor(Math.random() * frases.length);
 const elemento = document.getElementById("frase");
 
 function cambiarFrase() {
